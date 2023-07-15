@@ -1,0 +1,38 @@
+html {
+  font-size: 20px;
+  
+}
+body {
+  
+ font-family: "Arial", "Meiryo", sans-serif;
+ text-align: center;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2.4rem;
+  text-shadow: 2px 1px gainsboro;
+  border-bottom: solid 3px rgb(115,115,114);
+
+}
+
+.m {
+  color:skyblue;
+}
+
+.p {
+  color: rgb(255,192,203);
+}
+
+.pink {
+  color: rgb(255,192,203);
+}
+
+.skyblue {
+  color: skyblue;
+}
+
+#basic > p {
+  font-weight: bold;
+}
