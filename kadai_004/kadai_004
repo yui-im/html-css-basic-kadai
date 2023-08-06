@@ -1,0 +1,36 @@
+yui@imanaganoMacBook-Air ~ % cd desktop/TEST
+yui@imanaganoMacBook-Air TEST % mkdir git_challenge
+yui@imanaganoMacBook-Air TEST % cd git_challenge
+yui@imanaganoMacBook-Air git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /Users/yui/Desktop/TEST/git_challenge/.git/
+yui@imanaganoMacBook-Air git_challenge % 
+yui@imanaganoMacBook-Air git_challenge % git add hello_world.txt
+yui@imanaganoMacBook-Air git_challenge % git commit -m "hello_world.txtを追加"
+[master (root-commit) 3531bac] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+yui@imanaganoMacBook-Air git_challenge % echo "こんにちは、世界！" >> hello_world.txt
+yui@imanaganoMacBook-Air git_challenge % git add hello_world.txt
+yui@imanaganoMacBook-Air git_challenge % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+yui@imanaganoMacBook-Air git_challenge % git commit -m "日本語訳を追記"
+[master f23ae25] 日本語訳を追記
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+yui@imanaganoMacBook-Air git_challenge % git log --oneline
+f23ae25 (HEAD -> master) 日本語訳を追記
+3531bac hello_world.txtを追加
+yui@imanaganoMacBook-Air git_challenge % 
